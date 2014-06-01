@@ -3,8 +3,8 @@ require "lita"
 module Lita
   module Handlers
     class Crazycaps < Handler
-      route(/^crazycaps\s+(.+)/i, :crazycaps, command: true, help: {
-        "crazycaps PHRASE" => "Return PHRASE as a randomly capitalized new phrase."
+      route(/^(?:cc|crazycaps)\s+(.+)/i, :crazycaps, command: true, help: {
+        "cc PHRASE" => "Return PHRASE as a randomly capitalized new phrase."
       })
       
       def crazycaps(response)
