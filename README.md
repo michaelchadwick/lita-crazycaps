@@ -15,8 +15,9 @@ gem "lita-crazycaps"
 To make your phrase's capitalization crazy:
 
 ```
- [You] Lita: crazycaps "This is intelligible text right here, yo"
+ [You] Lita crazycaps "This is intelligible text right here, yo"
 [Lita] "tHIs Is inTeLliGIblE TExT RigHt HeRe, yO"
+```
 
 ## License
 
