@@ -6,21 +6,15 @@ module Lita
       route(/^(?:cc|crazycaps)\s+(.+)/i, :crazycaps, command: true, help: {
         "cc PHRASE" => "Return PHRASE as a randomly capitalized new phrase."
       })
-      
+
       def crazycaps(response)
         phrase = response.matches[0][0]
         phrase_cc = ""
-        
+
         phrase.each_char do |c|
-          r = Random.new.rand(0..1)
-          if (r == 0)
-            c = c.upcase
-          else
-            c = c.downcase
-          end
-          phrase_cc += c
+          phrase_cc += [true, false].sample ? c.downcase : c.upcase
         end
-        
+
         response.reply(phrase_cc)
       end
     end
