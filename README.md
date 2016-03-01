@@ -7,7 +7,7 @@
 Add lita-crazycaps to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-crazycaps"
+gem 'lita-crazycaps'
 ```
 
 ## Usage
