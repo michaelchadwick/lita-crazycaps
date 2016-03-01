@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-crazycaps'
-  spec.version       = '0.0.2'
+  spec.version       = '0.0.3'
   spec.authors       = ['Michael Chadwick']
   spec.email         = ['michael.chadwick@gmail.com']
-  spec.description   = ['A Lita handler that randomizes the capitalization of a phrase.']
-  spec.summary       = ['A Lita handler that randomizes the capitalization of a phrase.']
+  spec.description   = 'A Lita handler that randomizes the capitalization of a phrase.'
+  spec.summary       = 'A Lita handler that randomizes the capitalization of a phrase.'
   spec.homepage      = 'https://github.com/michaelchadwick/lita-crazycaps'
   spec.license       = 'MIT'
   spec.metadata      = { 'lita_plugin_type' => 'handler' }
